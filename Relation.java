@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Relation {
@@ -5,9 +6,10 @@ public class Relation {
     private List<Attribut> attributs;
     private List<List<Object>> contenus;
 
-    public Relation(String nom, List<Attribut> attributs) {
+    public Relation(String nom) {
         this.nom = nom;
-        this.attributs = attributs;
+        this.attributs = new ArrayList<>();
+        this.contenus = new ArrayList<>(new ArrayList<>());
     }
     
     public String getNom() {
@@ -19,4 +21,5 @@ public class Relation {
     public List<List<Object>> getContenus() {
         return contenus;
     }
+    
 }

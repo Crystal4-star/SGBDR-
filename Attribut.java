@@ -14,4 +14,7 @@ public class Attribut {
         return domaine;
     }
 
+    public String toString(){
+        return nom;
+    }
 }

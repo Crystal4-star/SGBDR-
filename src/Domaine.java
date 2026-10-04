@@ -16,4 +16,8 @@ public class Domaine{
     public List<Object> getType() {
         return type;
     }
+
+    public String toString(){
+        return nom;
+    }
 }
